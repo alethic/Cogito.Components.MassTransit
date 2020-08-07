@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <Authors>Jerome Haltom</Authors>
+        <Company>Jerome Haltom</Company>
+        <RepositoryUrl>https://github.com/wasabii/Cogito.Components.Azure.Identity</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseUrl></PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/wasabii/Cogito.Components.Azure.Identity</PackageProjectUrl>
+        <PackageIconUrl>https://cloverluxussc.blob.core.windows.net/public/cogito-nuget-icon.png</PackageIconUrl>
+        <LangVersion>8.0</LangVersion>
+    </PropertyGroup>
+</Project>
