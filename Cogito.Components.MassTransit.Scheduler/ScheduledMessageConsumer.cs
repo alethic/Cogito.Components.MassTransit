@@ -81,46 +81,36 @@ namespace Cogito.Components.MassTransit.Scheduler
             var triggers = new HashSet<ITrigger>();
             triggers.Add(trigger);
 
-            using (LogContext.PushProperty("NewJob", job, true))
-            using (LogContext.PushProperty("NewTrigger", trigger, true))
+            // trigger already exists, check for equality; if false, replace
+            if (await scheduler.CheckExists(triggerKey))
             {
-                // trigger already exists, check for equality; if false, replace
-                if (await scheduler.CheckExists(triggerKey))
+                var oldTrigger = await scheduler.GetTrigger(triggerKey);
+                if (Equals(trigger, oldTrigger) == false)
                 {
-                    var oldTrigger = await scheduler.GetTrigger(triggerKey);
-                    using (LogContext.PushProperty("OldTrigger", oldTrigger, true))
-                    {
-                        if (Equals(trigger, oldTrigger) == false)
-                        {
-                            logger.LogInformation("Rescheduling existing job {JobKey} with new triggers.", job.Key, trigger);
-                            await scheduler.ScheduleJob(job, triggers, true);
-                            return;
-                        }
-                    }
-                }
-
-                // job already exists, check for equality; if false, replace
-                if (await scheduler.CheckExists(jobKey))
-                {
-                    var oldJob = await scheduler.GetJobDetail(jobKey);
-                    using (LogContext.PushProperty("OldJob", oldJob, true))
-                    {
-                        if (Equals(job, oldJob) == false)
-                        {
-                            logger.LogInformation("Rescheduling existing job {JobKey}.", job.Key);
-                            await scheduler.ScheduleJob(job, triggers, true);
-                            return;
-                        }
-                        else
-                            logger.LogDebug("No changes detected on existing scheduled job {JobKey}.", job.Key);
-                    }
-                }
-                else
-                {
-                    logger.LogInformation("Scheduling new job {JobKey}.", job.Key);
+                    logger.LogInformation("Rescheduling existing job {JobKey} with new triggers.", job.Key, trigger);
                     await scheduler.ScheduleJob(job, triggers, true);
                     return;
                 }
+            }
+
+            // job already exists, check for equality; if false, replace
+            if (await scheduler.CheckExists(jobKey))
+            {
+                var oldJob = await scheduler.GetJobDetail(jobKey);
+                if (Equals(job, oldJob) == false)
+                {
+                    logger.LogInformation("Rescheduling existing job {JobKey}.", job.Key);
+                    await scheduler.ScheduleJob(job, triggers, true);
+                    return;
+                }
+                else
+                    logger.LogDebug("No changes detected on existing scheduled job {JobKey}.", job.Key);
+            }
+            else
+            {
+                logger.LogInformation("Scheduling new job {JobKey}.", job.Key);
+                await scheduler.ScheduleJob(job, triggers, true);
+                return;
             }
         }
 

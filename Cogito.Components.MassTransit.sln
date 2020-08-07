@@ -9,17 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.MassTransit", "Cogito.MassTransit\Cogito.MassTransit.csproj", "{D028F798-2310-4CB3-9EBD-04A96D5E2F28}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{25FE063E-E01A-4F4B-9D5B-94BAE6087D4C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.MassTransit.Azure.ServiceBus", "Cogito.MassTransit.Azure.ServiceBus\Cogito.MassTransit.Azure.ServiceBus.csproj", "{7A818445-3934-4946-BCA9-A7C21C32305D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTransit", "Cogito.Components.MassTransit\Cogito.Components.MassTransit.csproj", "{B17EF1C1-B4AB-4518-A6E1-1C2BD90EE242}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTransit.Azure.ServiceBus", "Cogito.Components.MassTransit.Azure.ServiceBus\Cogito.Components.MassTransit.Azure.ServiceBus.csproj", "{3D84DEE8-9372-4B3E-AFF2-338DB5B685BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Components.MassTransit.Scheduler", "Cogito.Components.MassTransit.Scheduler\Cogito.Components.MassTransit.Scheduler.csproj", "{A79B89BF-6B39-4FB1-8613-A1E3D5EEC9AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTransit.Scheduler", "Cogito.Components.MassTransit.Scheduler\Cogito.Components.MassTransit.Scheduler.csproj", "{A79B89BF-6B39-4FB1-8613-A1E3D5EEC9AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,18 +23,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D028F798-2310-4CB3-9EBD-04A96D5E2F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D028F798-2310-4CB3-9EBD-04A96D5E2F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D028F798-2310-4CB3-9EBD-04A96D5E2F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D028F798-2310-4CB3-9EBD-04A96D5E2F28}.Release|Any CPU.Build.0 = Release|Any CPU
 		{25FE063E-E01A-4F4B-9D5B-94BAE6087D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{25FE063E-E01A-4F4B-9D5B-94BAE6087D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25FE063E-E01A-4F4B-9D5B-94BAE6087D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25FE063E-E01A-4F4B-9D5B-94BAE6087D4C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A818445-3934-4946-BCA9-A7C21C32305D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A818445-3934-4946-BCA9-A7C21C32305D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A818445-3934-4946-BCA9-A7C21C32305D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A818445-3934-4946-BCA9-A7C21C32305D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B17EF1C1-B4AB-4518-A6E1-1C2BD90EE242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B17EF1C1-B4AB-4518-A6E1-1C2BD90EE242}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B17EF1C1-B4AB-4518-A6E1-1C2BD90EE242}.Release|Any CPU.ActiveCfg = Release|Any CPU
