@@ -20,7 +20,7 @@ namespace ConsoleApp1
         {
             await Host.CreateDefaultBuilder(args)
                 .UseServiceProviderFactory(new AutofacServiceProviderFactory(b => b
-                    .Configure<ServiceBusOptions>(o => o.ConnectionString = "Endpoint=sb://revelwe-dev1.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=MFPVqnUyMzSXHmx9G7eNEXOlsJ0aAjDqND0cnvqLikU=")
+                    .Configure<ServiceBusOptions>(o => o.ConnectionString = "")
                     .RegisterAllAssemblyModules()))
                 .ConfigureAppConfiguration(b => b.AddEnvironmentVariables())
                 .Build()

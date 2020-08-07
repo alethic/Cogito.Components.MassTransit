@@ -3,9 +3,11 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>Provides automatic configuration of the MassTransit Bus for Azure Service Fabric.</Description>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Cogito.MassTransit.Azure.ServiceBus" Version="0.1.1" />
         <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="7.0.2" />
         <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.6" />
     </ItemGroup>

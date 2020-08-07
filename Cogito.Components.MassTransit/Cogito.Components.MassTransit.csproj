@@ -3,12 +3,14 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>Provides automatic configuration of the MassTransit Bus.</Description>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Cogito.Autofac" Version="2.2.10" />
         <PackageReference Include="Cogito.Components" Version="0.1.6" />
         <PackageReference Include="Cogito.Extensions.Logging.Autofac" Version="2.0.11" />
+        <PackageReference Include="Cogito.MassTransit" Version="0.1.1" />
         <PackageReference Include="MassTransit" Version="7.0.2" />
         <PackageReference Include="MassTransit.Autofac" Version="7.0.2" />
         <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.6" />
