@@ -3,7 +3,7 @@ configuration: Release
 platform: Any CPU
 
 install:
-  - choco install gitversion.portable -pre -y
+  - choco install gitversion.portable -y
 
 before_build:
   - ps: gitversion /l console /output buildserver
@@ -17,11 +17,11 @@ before_build:
 
 build:
   verbosity: minimal
-  project: Cogito.Components.Azure.Identity.sln
+  project: Cogito.Components.MassTransit.sln
 
 artifacts:
   - path: pkg\*.nupkg
-    name: Cogito.Components.Azure.Identity
+    name: Cogito.Components.MassTransit
 
 deploy:
   provider: NuGet
