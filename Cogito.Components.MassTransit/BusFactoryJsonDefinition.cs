@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 using Cogito.Autofac;
 using Cogito.Collections;
+using Cogito.MassTransit.Registration;
 
 using MassTransit;
 
@@ -18,9 +19,9 @@ namespace Cogito.Components.MassTransit
     /// <summary>
     /// Configures the JSON features of the bus.
     /// </summary>
-    [RegisterAs(typeof(IBusFactoryDefinition))]
+    [RegisterAs(typeof(IBusConfiguration))]
     [RegisterSingleInstance]
-    public class BusFactoryJsonDefinition : IBusFactoryDefinition
+    public class BusFactoryJsonDefinition : IBusConfiguration
     {
 
         readonly IEnumerable<JsonConverter> converters;
@@ -41,7 +42,7 @@ namespace Cogito.Components.MassTransit
         /// Configures the factory.
         /// </summary>
         /// <param name="configurator"></param>
-        public void Apply(IBusFactoryConfigurator configurator)
+        public void Apply(string name, IBusFactoryConfigurator configurator)
         {
             configurator.ConfigureJsonSerializer(Configure);
             configurator.ConfigureJsonDeserializer(Configure);

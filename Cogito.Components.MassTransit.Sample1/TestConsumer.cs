@@ -1,5 +1,7 @@
 ﻿using System.Threading.Tasks;
 
+using Cogito.MassTransit.Autofac;
+
 using MassTransit;
 
 using Microsoft.Extensions.Logging;

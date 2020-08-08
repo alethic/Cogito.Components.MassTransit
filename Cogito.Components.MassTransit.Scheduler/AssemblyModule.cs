@@ -13,6 +13,7 @@ namespace Cogito.Components.MassTransit.Scheduler
 
         protected override void Register(ContainerBuilder builder)
         {
+            builder.RegisterModule<Cogito.Components.MassTransit.AssemblyModule>();
             builder.RegisterFromAttributes(typeof(AssemblyModule).Assembly);
         }
 

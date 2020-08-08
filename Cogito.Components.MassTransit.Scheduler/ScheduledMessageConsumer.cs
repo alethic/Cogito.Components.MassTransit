@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
+using Cogito.MassTransit.Autofac;
 using Cogito.MassTransit.Scheduling;
 
 using MassTransit;

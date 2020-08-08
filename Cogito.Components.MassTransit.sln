@@ -13,11 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTrans
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTransit.Azure.ServiceBus", "Cogito.Components.MassTransit.Azure.ServiceBus\Cogito.Components.MassTransit.Azure.ServiceBus.csproj", "{3D84DEE8-9372-4B3E-AFF2-338DB5B685BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTransit.Scheduler", "Cogito.Components.MassTransit.Scheduler\Cogito.Components.MassTransit.Scheduler.csproj", "{A79B89BF-6B39-4FB1-8613-A1E3D5EEC9AB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTransit.Sample1", "Cogito.Components.MassTransit.Sample1\Cogito.Components.MassTransit.Sample1.csproj", "{F28B25C5-93EE-4976-A082-CA7A4FA6C651}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Components.MassTransit.Sample2", "Cogito.Components.MassTransit.Sample2\Cogito.Components.MassTransit.Sample2.csproj", "{D905483B-E091-4003-A93E-F8D9B52E96EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Components.MassTransit.Sample2", "Cogito.Components.MassTransit.Sample2\Cogito.Components.MassTransit.Sample2.csproj", "{D905483B-E091-4003-A93E-F8D9B52E96EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +31,6 @@ Global
 		{3D84DEE8-9372-4B3E-AFF2-338DB5B685BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D84DEE8-9372-4B3E-AFF2-338DB5B685BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D84DEE8-9372-4B3E-AFF2-338DB5B685BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A79B89BF-6B39-4FB1-8613-A1E3D5EEC9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A79B89BF-6B39-4FB1-8613-A1E3D5EEC9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A79B89BF-6B39-4FB1-8613-A1E3D5EEC9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A79B89BF-6B39-4FB1-8613-A1E3D5EEC9AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F28B25C5-93EE-4976-A082-CA7A4FA6C651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F28B25C5-93EE-4976-A082-CA7A4FA6C651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F28B25C5-93EE-4976-A082-CA7A4FA6C651}.Release|Any CPU.ActiveCfg = Release|Any CPU

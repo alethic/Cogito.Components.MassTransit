@@ -1,7 +1,6 @@
 ﻿using Autofac;
 
 using Cogito.Autofac;
-using Cogito.Components.MassTransit;
 
 using MassTransit;
 
