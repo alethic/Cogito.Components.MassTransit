@@ -8,7 +8,7 @@ using MassTransit;
 
 using Microsoft.Extensions.Hosting;
 
-namespace ConsoleApp1
+namespace Cogito.Components.MassTransit.Sample1
 {
 
     [RegisterAs(typeof(IHostedService))]

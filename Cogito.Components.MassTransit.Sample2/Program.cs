@@ -10,7 +10,7 @@ using Cogito.MassTransit.Azure.ServiceBus.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace ConsoleApp1
+namespace Cogito.Components.MassTransit.Sample2
 {
 
     public static class Program
@@ -20,7 +20,7 @@ namespace ConsoleApp1
         {
             await Host.CreateDefaultBuilder(args)
                 .UseServiceProviderFactory(new AutofacServiceProviderFactory(b => b
-                    .Configure<ServiceBusOptions>(o => o.ConnectionString = "")
+                    .Configure<ServiceBusOptions>(o => o.ConnectionString = "Endpoint=sb://revelwe-dev1.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=MFPVqnUyMzSXHmx9G7eNEXOlsJ0aAjDqND0cnvqLikU=")
                     .RegisterAllAssemblyModules()))
                 .ConfigureAppConfiguration(b => b.AddEnvironmentVariables())
                 .Build()

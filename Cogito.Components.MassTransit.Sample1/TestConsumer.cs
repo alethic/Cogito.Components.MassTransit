@@ -1,12 +1,10 @@
 ﻿using System.Threading.Tasks;
 
-using Cogito.Components.MassTransit;
-
 using MassTransit;
 
 using Microsoft.Extensions.Logging;
 
-namespace ConsoleApp1
+namespace Cogito.Components.MassTransit.Sample1
 {
 
     [RegisterConsumer("test_endpoint")]

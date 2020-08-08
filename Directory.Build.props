@@ -7,6 +7,7 @@
         <PackageProjectUrl>https://github.com/alethic/Cogito.Components.MassTransit</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>icon.png</PackageIcon>
+        <PackageTags>cogito masstransit</PackageTags>
         <LangVersion>8.0</LangVersion>
     </PropertyGroup>
     <ItemGroup>

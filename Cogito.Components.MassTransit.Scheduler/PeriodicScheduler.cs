@@ -14,7 +14,7 @@ namespace Cogito.Components.MassTransit.Scheduler
     /// Schedules a set of periodic Pulse messages on the bus.
     /// </summary>
     [RegisterAs(typeof(IRunnable))]
-    public class PeriodicScheduler :        IRunnable
+    public class PeriodicScheduler : IRunnable
     {
 
         const string JOB_GROUP = "Cogito.Components.MassTransit.Scheduler";

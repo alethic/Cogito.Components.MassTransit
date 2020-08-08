@@ -5,7 +5,7 @@ using Cogito.Components.MassTransit;
 
 using MassTransit;
 
-namespace ConsoleApp1
+namespace Cogito.Components.MassTransit.Sample2
 {
 
     /// <summary>
